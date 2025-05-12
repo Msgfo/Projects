@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h2>AKM's Assignment 2</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <button class="custom-button" onclick="location.href='stocks.html'">Stocks</button>
+            <button class="custom-button" onclick="location.href='dogs.html'">Dogs</button>
+        </div>
+        <div id="quote">
+            <p id="quote-title">Quote of the day:</p>
+            <p id="quote-text">Loading quote...</p>
+        </div>
+    </main>
+    <div id="audio-instructions">
+        <p>This page utilizes voice commands</p>
+        <ul>
+            <li>"Hello" - Alerts with Hello World</li>
+            <li>"Change the color to [color]" - Changes the background.</li>
+            <li>"Navigate to [page]" - Navigates to Home, Stocks, or Dogs.</li>
+        </ul>
+        <button onclick="startAudio()">Turn On Audio</button>
+        <button onclick="stopAudio()">Turn Off Audio</button>
+    </div>
+</body>
+</html>

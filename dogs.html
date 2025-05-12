@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <script src="dogs.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Dogs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+            </ul>
+        </nav>
+
+        <!-- Carousel Section -->
+        <div class="carousel-container">
+            <div id="dog-carousel" data-simple-slider></div>
+        </div>
+
+        <!-- Dog Breeds Section -->
+        <h2>Dog Breeds</h2>
+        <div id="breed-buttons"></div>
+
+        <!-- Dog Info Section -->
+        <div id="breed-info" class="hidden">
+            <h3 id="breed-name"></h3>
+            <p id="breed-description"></p>
+            <p><strong>Min Life Span:</strong> <span id="breed-min-life"></span></p>
+            <p><strong>Max Life Span:</strong> <span id="breed-max-life"></span></p>
+        </div>
+
+        <!-- Audio Instructions -->
+        <div id="audio-instructions">
+            <p>This page utilizes voice commands:</p>
+            <ul>
+                <li>"Hello"</li>
+                <li>"Change the color to [color]" - Changes the background.</li>
+                <li>"Navigate to [page]" - Navigates to Home, Stocks, or Dogs.</li>
+                <li>"Load Dog Breed [Breed Name]" - Loads information about the specified dog breed.</li>
+            </ul>
+            <div class="button-container">
+                <button class="custom-button" onclick="startAudio()">Turn On Audio</button>
+                <button class="custom-button" onclick="stopAudio()">Turn Off Audio</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

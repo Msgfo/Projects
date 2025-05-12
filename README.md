@@ -1,4 +1,1 @@
-# Projects
-This is a collection of my projects, varying from different languages and focuses.  
-
-You can click through all the project titles, the titles will also include the language that was used in the creation of the projects. These projects will include self, academic, and work. 
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/SuwkAydL)

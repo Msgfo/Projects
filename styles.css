@@ -1,0 +1,188 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+}
+
+/* Ensure the heading has space below it */
+h2 {
+    margin-bottom: 0.5rem; /* Reduced space below the heading */
+    font-size: 1.6rem; /* Smaller font size */
+}
+
+/* Navigation Bar Styling */
+nav {
+    width: 100%; /* Full width */
+    background-color: limegreen;
+    padding: 8px 0; /* Reduced padding for nav */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+    margin-top: 1.5rem; /* Reduced margin to bring the nav closer to the heading */
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px; /* Reduced padding */
+    display: block;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+nav ul li:hover {
+    background-color: gray; /* Hover effect */
+    border-radius: 5px;
+}
+
+/* Quote Section */
+#quote {
+    margin-top: 5rem; /* Reduced space above the container */
+    padding: 0.8rem; /* Reduced padding */
+    background-color: white; /* Set the background color to white */
+    border: 2px solid black; /* Add a black border */
+    border-radius: 8px; /* Round the corners */
+    max-width: 500px; /* Reduced max width */
+    text-align: center; /* Center-align the text */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Quote Title */
+#quote-title {
+    font-size: 1.3rem; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 0.8rem; /* Reduced margin */
+}
+
+/* Custom Button Styling */
+.custom-button {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 3.5rem;
+    padding: 0 1.2rem;
+    text-align: center;
+    transition: all .5s;
+}
+
+.custom-button:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Carousel Styling */
+[data-simple-slider] {
+    width: 70vw; /* 70% of the viewport width */
+    height: 60vh; /* Adjusted to fit a nice height */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-simple-slider] img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill the area without distortion */
+}
+
+/* Breed Buttons */
+#breed-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* Breed Info Container */
+#breed-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#breed-info h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+#breed-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Audio Instructions Styling */
+#audio-instructions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    text-align: center;
+    padding: 8px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Image Styling */
+table img {
+    display: block;
+    margin: 0 auto; /* Center the images */
+}
